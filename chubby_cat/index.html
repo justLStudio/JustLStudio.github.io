@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chubby Cat 貪吃貓</title>
+    <meta name="description" content="歡迎來到《貪吃貓（Chubby Cat）》——一款輕鬆又充滿策略的島嶼拼放遊戲！在限時內擺放各種小島，種植食物、餵飽貪吃貓，並巧妙利用旋轉與合成機制，創造最高分數！每個選擇都至關重要，你能解鎖所有挑戰，成為貓咪界的傳奇大廚嗎？">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!--****** Language Switch Buttons ******-->
+    <header class="header">
+        <nav class="nav_main">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Chubby Cat Logo"> Chubby Cat 貪吃貓
+            </a>
+            <ul class="nav">
+                <li><a href="#main" class="active" id="home-link"></a></li>
+                <li><a href="#about" id="about-link"></a></li>
+                <li><a href="#feature" id="feature-link"></a></li>
+                <li><a href="#screenShots" id="screenShots-link"></a></li>
+                <li><a href="https://store.steampowered.com/app/3588660/_/" id="get-game-link"></a></li>
+                <li><a href="../index.html" id="JustLStudio-link"></a></li>
+                <li><button onclick="switchLanguage('zh')">中文</button></li>
+                <li><button onclick="switchLanguage('en')">English</button></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!--****** Header End ******-->
+    <!--****** Main ******-->
+    <section class="main" id="main">
+        <div class="content-container">
+            <div class="text-container">
+                <div class="logo-container">
+                    <img src="images/main_logo.png" alt="Chubby Cat Logo" id="main-logo">
+                </div>
+                <h1><a id="main-title"></a></h1>
+                <p class="description" id="main-description"></p>
+                <div class="button-container">
+                    <a href="https://store.steampowered.com/app/3588660/_/" class="main-button" id="game-start-button"></a>
+                </div>
+            </div>
+            <div class="video-container">
+                <!-- <iframe width="560" height="315" src=""
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe> -->
+                <img  width="560" src="images/logo.png" alt="Chubby Cat Logo">
+            </div>
+        </div>
+    </section>
+    <!--****** Main End ******-->
+    <!--****** About ******-->
+    <section class="about" id="about">
+        <div class="content-container">
+            <div class="about-image-container">
+                <img src="images/about-main.png" alt="JustLStudio" id="about-image">
+            </div>
+
+            <div class="about-text-container">
+                <h2 id="about-title"></h2>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <img src="images/about-icon-01.png" alt="起源與歷程" id="about-icon-1">
+                    </div>
+                    <div class="about-description" id="about-description-1">
+                        <h3 id="about-header-1"></h3>
+                        <p id="about-text-1"></p>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-icon">
+                        <img src="images/about-icon-02.png" alt="目標" id="about-icon-2">
+                    </div>
+                    <div class="about-description" id="about-description-2">
+                        <h3 id="about-header-2"></h3>
+                        <p id="about-text-2"></p>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-icon">
+                        <img src="images/about-icon-03.png" alt="目標" id="about-icon-3">
+                    </div>
+                    <div class="about-description" id="about-description-3">
+                        <h3 id="about-header-3"></h3>
+                        <p id="about-text-3"></p>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-icon">
+                        <img src="images/about-icon-04.png" alt="目標" id="about-icon-4">
+                    </div>
+                    <div class="about-description" id="about-description-4">
+                        <h3 id="about-header-4"></h3>
+                        <p id="about-text-4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--****** About End ******-->
+    <!--****** Feature ******-->
+    <section class="feature" id="feature">
+        <div class="content-container">
+            <div class="feature-text-container">
+                <h2 id="feature-title"></h2>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-01.png" alt="起源與歷程" id="feature-icon-1">
+                    </div>
+                    <div class="feature-description" id="feature-description-1">
+                        <h3 id="feature-header-1"></h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-02.png" alt="目標" id="feature-icon-2">
+                    </div>
+                    <div class="feature-description" id="feature-description-2">
+                        <h3 id="feature-header-2"></h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-03.png" alt="目標" id="feature-icon-3">
+                    </div>
+                    <div class="feature-description" id="feature-description-3">
+                        <h3 id="feature-header-3"></h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-04.png" alt="目標" id="feature-icon-4">
+                    </div>
+                    <div class="feature-description" id="feature-description-4">
+                        <h3 id="feature-header-4"></h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-05.png" alt="目標" id="feature-icon-5">
+                    </div>
+                    <div class="feature-description" id="feature-description-5">
+                        <h3 id="feature-header-5"></h3>
+                    </div>
+                </div>
+                <h3 id="feature-footer"></h3>
+            </div>
+            <div class="feature-image-container">
+                <img src="images/feature-main.png" alt="JustLStudio" id="feature-image">
+            </div>
+
+        </div>
+    </section>
+    <!--****** Feature End ******-->
+    <!--****** screenShots ******-->
+    <section class="screenShots" id="screenShots">
+        <div class="content-container" id="screenShots-container">
+        </div>
+    </section>
+    <!--****** screenShots End ******-->
+    <!--****** Get Game ******-->
+    <section class="get-game" id="get-game">
+        <div class="content-container">
+            <a href="https://store.steampowered.com/app/3588660/_/" class="get-game-button" id="get-game-button"></a>
+        </div>
+    </section>
+    <!--****** Get Game End ******-->
+
+    <!--****** Footer ******-->
+    <footer class="footer">
+        <div class="content-container">
+            <p id="footer-text"></p>
+            <p id="footer-email">eMail：<a href="mailto:justlemonstudio@gmail.com">justlemonstudio@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <!--****** Footer End ******-->
+    <script src="js/lauguage.js"></script>
+    <script src="js/screenShot.js"></script>
+</body>
+
+</html>

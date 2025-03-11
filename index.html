@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Just L Studio Official Website</title>
+    <meta name="description" content="Just L Studio - Indie Game Developer. Check out our latest games and projects!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="justlstudio/css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!--****** Language Switch Buttons ******-->
+    <header class="header">
+        <nav class="nav_main">
+            <a href="index.html" class="logo">
+                <img src="justlstudio/images/JustLStudio.png" alt="Just L Studio Logo"> Just L Studio
+            </a>
+            <ul class="nav">
+                <li><a href="#main" class="active" id="home-link"></a></li>
+                <li><a href="#about" id="about-link"></a></li>
+                <li><a href="#games" id="games-link"></a></li>
+                <li><a href="#contact_us" id="contact-link"></a></li>
+                <li><button onclick="switchLanguage('zh')">中文</button></li>
+                <li><button onclick="switchLanguage('en')">English</button></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!--****** Header End ******-->
+    <!--****** Main ******-->
+    <section class="main" id="main">
+        <div class="content-container">
+            <div class="text-container">
+                <div class="logo-container">
+                    <img src="justlstudio/images/main-logo.png" alt="貪吃貓 Logo" id="main-logo">
+                </div>
+                <h1><a id="main-title"></a></h1>
+                <p class="description" id="main-description"></p>
+                <div class="button-container">
+                    <a href="#about" class="main-button" id="wishlist-button"></a>
+                </div>
+            </div>
+            <div class="video-container">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/9dmzZUMZ05A?autoplay=1&mute=1"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe> -->
+                <img  width="560" src="chubby_cat/images//logo.png" alt="Chubby Cat Logo">
+            </div>
+        </div>
+    </section>
+    <!--****** Main End ******-->
+
+    <!--****** About ******-->
+    <section class="about" id="about">
+        <div class="content-container">
+            <div class="about-image-container">
+                <img src="justlstudio/images/about-main.png" alt="JustLStudio" id="about-image">
+            </div>
+
+            <div class="about-text-container">
+                <h2 id="about-title"></h2>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <img src="justlstudio/images/about-icon-01.png" alt="起源與歷程" id="about-icon-1">
+                    </div>
+                    <div class="about-description" id="about-description-1">
+                        <h3 id="about-header-1"></h3>
+                        <p id="about-text-1"></p>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-icon">
+                        <img src="justlstudio/images/about-icon-02.png" alt="目標" id="about-icon-2">
+                    </div>
+                    <div class="about-description" id="about-description-2">
+                        <h3 id="about-header-2"></h3>
+                        <p id="about-text-2"></p>
+                    </div>
+                </div>
+                <h3 id="about-footer"></h3>
+            </div>
+        </div>
+    </section>
+    <!--****** About End ******-->
+    <!--****** Games ******-->
+    <section class="games" id="games">
+        <div class="content-container">
+            <div class="game-item">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="chubby_cat/images/logo.png" alt="Chubby Cat" id="chubby-cat-logo">
+                    </div>
+                    <div class="game-details">
+                        <h3 id="chubby-cat-title"></h3>
+                        <p id="chubby-cat-description"></p>
+                        <a href="chubby_cat/index.html" class="game-button" id="chubby-cat-game-button"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-item">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="lucky_island/images/logo.png" alt="Lucky Island" id="lucky-island-logo">
+                    </div>
+                    <div class="game-details">
+                        <h3 id="lucky-island-title"></h3>
+                        <p id="lucky-island-description"></p>
+                        <a href="lucky_island/index.html" class="game-button" id="lucky-island-game-button"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-item">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="slime_hero/images/logo.png" alt="Slime Hero" id="slime-hero-logo">
+                    </div>
+                    <div class="game-details">
+                        <h3 id="slime-hero-title"></h3>
+                        <p id="slime-hero-description"></p>
+                        <a href="https://store.steampowered.com/app/2138400/_/" class="game-button" id="slime-hero-game-button"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--****** Games End ******-->
+    <!--****** Contact Us ******-->
+    <section class="contact-us" id="contact_us">
+        <div class="content-container">
+            <h2 id="contact-title"></h2>
+            <p id="contact-description"></p>
+
+            <form id="contact-form">
+                <div class="input-group">
+                    <label for="name" id="name-label"></label>
+                    <input type="text" id="name" name="name" placeholder="請輸入您的姓名(選填)" id="name-input">
+                </div>
+
+                <div class="input-group">
+                    <label for="email" id="email-label"></label>
+                    <input type="email" id="email" name="email" placeholder="請輸入您的 Email(選填)" id="email-input">
+                </div>
+
+                <div class="input-group">
+                    <label for="message" id="message-label"></label>
+                    <textarea id="message" name="message" rows="4" placeholder="請輸入您的訊息" id="message-input"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button" id="submit-button"></button>
+            </form>
+
+            <div id="response-message"
+                style="display: none; padding: 15px; margin-top: 20px; border: 1px solid #ddd; border-radius: 5px; background-color: #f4f4f4;">
+            </div>
+        </div>
+    </section>
+    <!--****** Contact Us End ******-->
+
+    <!--****** Footer ******-->
+    <footer class="footer">
+        <div class="content-container">
+            <p id="footer-text"></p>
+            <p id="footer-email">eMail：<a href="mailto:justlemonstudio@gmail.com">justlemonstudio@gmail.com</a></p>
+        </div>
+    </footer>
+    <!--****** Footer End ******-->
+
+    <script src="justlstudio/js/contact-form.js"></script>
+    <script src="justlstudio/js/lauguage.js"></script>
+</body>
+
+</html>

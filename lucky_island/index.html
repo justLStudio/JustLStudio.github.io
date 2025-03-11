@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lucky Island 幸運島</title>
+    <meta name="description" content="在 Lucky Island 展開神秘島嶼的冒險旅程！探索未知、解開謎題、發現隱藏的寶藏，挑戰你的智慧與勇氣！">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!--****** Language Switch Buttons ******-->
+    <header class="header">
+        <nav class="nav_main">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Lucky Island Logo"> Lucky Island 幸運島
+            </a>
+            <ul class="nav">
+                <li><a href="#main" class="active" id="home-link"></a></li>
+                <li><a href="#about" id="about-link"></a></li>
+                <li><a href="#feature" id="feature-link"></a></li>
+                <li><a href="#screenShots" id="screenShots-link"></a></li>
+                <li><a href="https://store.steampowered.com/app/2195650/_/" id="get-game-link"></a></li>
+                <li><a href="../index.html" id="JustLStudio-link"></a></li>
+                <li><button onclick="switchLanguage('zh')">中文</button></li>
+                <li><button onclick="switchLanguage('en')">English</button></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!--****** Header End ******-->
+    <!--****** Main ******-->
+    <section class="main" id="main">
+        <div class="content-container">
+            <div class="text-container">
+                <div class="logo-container">
+                    <img src="images/main_logo.png" alt="Lucky Island Logo" id="main-logo">
+                </div>
+                <h1><a id="main-title"></a></h1>
+                <p class="description" id="main-description"></p>
+                <div class="button-container">
+                    <a href="https://store.steampowered.com/app/2195650/_/" class="main-button" id="game-start-button"></a>
+                </div>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9dmzZUMZ05A?autoplay=1&mute=1"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <!--****** Main End ******-->
+    <!--****** About ******-->
+    <section class="about" id="about">
+        <div class="content-container">
+            <div class="about-image-container">
+                <img src="images/about-main.png" alt="JustLStudio" id="about-image">
+            </div>
+
+            <div class="about-text-container">
+                <h2 id="about-title"></h2>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <img src="images/about-icon-01.png" alt="起源與歷程" id="about-icon-1">
+                    </div>
+                    <div class="about-description" id="about-description-1">
+                        <h3 id="about-header-1"></h3>
+                        <p id="about-text-1"></p>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-icon">
+                        <img src="images/about-icon-02.png" alt="目標" id="about-icon-2">
+                    </div>
+                    <div class="about-description" id="about-description-2">
+                        <h3 id="about-header-2"></h3>
+                        <p id="about-text-2"></p>
+                    </div>
+                </div>
+                <h3 id="about-footer"></h3>
+            </div>
+        </div>
+    </section>
+    <!--****** About End ******-->
+    <!--****** Feature ******-->
+    <section class="feature" id="feature">
+        <div class="content-container">
+            <div class="feature-text-container">
+                <h2 id="feature-title"></h2>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-01.png" alt="起源與歷程" id="feature-icon-1">
+                    </div>
+                    <div class="feature-description" id="feature-description-1">
+                        <h3 id="feature-header-1"></h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-02.png" alt="目標" id="feature-icon-2">
+                    </div>
+                    <div class="feature-description" id="feature-description-2">
+                        <h3 id="feature-header-2"></h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-03.png" alt="目標" id="feature-icon-3">
+                    </div>
+                    <div class="feature-description" id="feature-description-3">
+                        <h3 id="feature-header-3"></h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-04.png" alt="目標" id="feature-icon-4">
+                    </div>
+                    <div class="feature-description" id="feature-description-4">
+                        <h3 id="feature-header-4"></h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/feature-icon-05.png" alt="目標" id="feature-icon-5">
+                    </div>
+                    <div class="feature-description" id="feature-description-5">
+                        <h3 id="feature-header-5"></h3>
+                    </div>
+                </div>
+                <h3 id="feature-footer"></h3>
+            </div>
+            <div class="feature-image-container">
+                <img src="images/feature-main.png" alt="JustLStudio" id="feature-image">
+            </div>
+
+        </div>
+    </section>
+    <!--****** Feature End ******-->
+    <!--****** screenShots ******-->
+    <section class="screenShots" id="screenShots">
+        <div class="content-container" id="screenShots-container">
+        </div>
+    </section>
+    <!--****** screenShots End ******-->
+    <!--****** Get Game ******-->
+    <section class="get-game" id="get-game">
+        <div class="content-container">
+            <a href="https://store.steampowered.com/app/2195650/_/" class="get-game-button" id="get-game-button"></a>
+        </div>
+    </section>
+    <!--****** Get Game End ******-->
+
+    <!--****** Footer ******-->
+    <footer class="footer">
+        <div class="content-container">
+            <p id="footer-text"></p>
+            <p id="footer-email">eMail：<a href="mailto:justlemonstudio@gmail.com">justlemonstudio@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <!--****** Footer End ******-->
+    <script src="js/lauguage.js"></script>
+    <script src="js/screenShot.js"></script>
+</body>
+
+</html>
