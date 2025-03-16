@@ -4,9 +4,9 @@ const languages = {
         about: "About",
         games: "Games",
         contact: "Contact Us",
-        mainLogoAlt: "Chubby Cat Logo",
-        mainTitle: "2025: The Grand Launch of Chubby Cat",
-        mainDescription: "Chubby Cat is a fun adventure game where you play as a hungry cat exploring different worlds, completing challenges, and collecting food to enhance the cat's abilities.",
+        mainLogoAlt: "Chubby Cats Logo",
+        mainTitle: "2025: The Grand Launch of Chubby Cats",
+        mainDescription: "Chubby Cats is a fun adventure game where you play as a hungry cat exploring different worlds, completing challenges, and collecting food to enhance the cat's abilities.",
         wishlistButton: "Add to Wishlist",
         aboutTitle: "JustLStudio - Independent Game Studio",
         aboutText1: "Founded by an independent developer from Taiwan, JustLStudio began its journey in 2022. With passion and creativity, we aim to turn imaginative ideas into real, playable games.",
@@ -14,7 +14,7 @@ const languages = {
         aboutText2: "We don't just make games, we create unforgettable experiences. Each game is packed with fresh ideas and unique gameplay, designed to surprise and entertain players.",
         aboutHeader2: "Let Creativity Shine Through Games",
         aboutFooter: "🚀 JustLStudio 🚀 Making indie games shine, and creativity knows no bounds!",
-        chubbyCatTitle: "Chubby Cat",
+        chubbyCatTitle: "Chubby Cats",
         chubbyCatDescription: "Help the hungry cat collect food, avoid obstacles, and challenge yourself!",
         chubbyCatGameButtonDescription: "To Game",
         luckyIslandTitle: "Lucky Island",
@@ -38,7 +38,7 @@ const languages = {
         contact: "聯繫我們",
         mainLogoAlt: "貪吃貓 Logo",
         mainTitle: "2025重磅推出 貪吃貓",
-        mainDescription: "餵飽貓咪，征服島嶼，美味不斷升級！在《貪吃貓（Chubby Cat）》的世界裡，貓咪們不僅貪吃，還非常挑嘴！你的任務是擺放各種島嶼，種植食材、製作料理，並在有限的時間內滿足牠們的需求。隨著關卡推進，你將遇到更多的挑戰，享受令人上癮的策略挑戰！",
+        mainDescription: "餵飽貓咪，征服島嶼，美味不斷升級！在《貪吃貓（Chubby Cats）》的世界裡，貓咪們不僅貪吃，還非常挑嘴！你的任務是擺放各種島嶼，種植食材、製作料理，並在有限的時間內滿足牠們的需求。隨著關卡推進，你將遇到更多的挑戰，享受令人上癮的策略挑戰！",
         wishlistButton: "加入願望清單",
         aboutTitle: "JustLStudio 獨立遊戲工作室",
         aboutText1: "JustLStudio 由台灣獨立開發者創立，從 2022 年開始，獨自走上遊戲製作之路。不依靠大團隊，從程式、設計到美術，一手包辦，憑藉熱情與創意，將腦中的奇思妙想變成真實可玩的遊戲世界。",
@@ -110,7 +110,7 @@ function switchLanguage(language) {
     const studioLink_chubby_cat = document.getElementById("chubby-cat-game-button");
 
     if (studioLink_chubby_cat) {
-        studioLink_chubby_cat.href = `chubby_cat/index.html?lang=${currentLang}`;
+        studioLink_chubby_cat.href = `chubby_cats/index.html?lang=${currentLang}`;
     }
 
     const studioLink_lucky_island = document.getElementById("lucky-island-game-button");
@@ -127,7 +127,7 @@ window.onload = function () {
     const studioLink_chubby_cat = document.getElementById("chubby-cat-game-button");
 
     if (studioLink_chubby_cat) {
-        studioLink_chubby_cat.href = `chubby_cat/index.html?lang=${currentLang}`;
+        studioLink_chubby_cat.href = `chubby_cats/index.html?lang=${currentLang}`;
     }
 
     const studioLink_lucky_island = document.getElementById("lucky-island-game-button");
