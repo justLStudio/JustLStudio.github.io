@@ -508,115 +508,207 @@ header .nav_main button:active {
 
 
 /****** media ******/
-@media (max-width: 768px) {
+
+/****** media ******/
+@media (max-width: 1024px) {
+
+  /* Header adjustments */
   .header .nav_main {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
+    padding: 0 10px;
+  }
+
+  .header .nav_main .logo {
+    font-size: 0px;
   }
 
   .header .nav_main .nav {
-    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header .nav_main .nav a {
+    font-size: 14px;
+  }
+
+  #home-link {
+    font-size: 0px;
+  }
+
+  #about-link {
+    font-size: 0px;
+  }
+
+  #feature-link {
+    font-size: 0px;
+  }
+
+  #screenShots-link {
+    font-size: 0px;
+  }
+
+  #get-game-link {
+    display: inline-block;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  #get-game-link:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-color: black;
+  }
+
+
+  .header .nav_main div {
     gap: 10px;
   }
 
   .main .content-container {
+    margin-top: 200px;
     flex-direction: column;
-    text-align: center;
-  }
-
-  .main .text-container {
-    max-width: 90%;
-    padding-right: 0;
-  }
-
-  .about .content-container,
-  .feature .content-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about .about-text-container,
-  .feature .feature-text-container {
-    max-width: 90%;
-    padding-left: 0;
-  }
-
-  .screenShots .screenShot-item {
-    width: calc(50% - 10px);
-  }
-
-  .get-game-button {
-    width: 100%;
-    padding: 40px;
-    font-size: 32px;
-  }
-
-  .footer .content-container {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .header .nav_main {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    padding: 5px 0;
-  }
-
-  .header .nav_main .nav {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .main .content-container {
-    flex-direction: column;
-    text-align: center;
     scale: 100%;
   }
 
   .main .text-container {
     max-width: 100%;
-    padding: 0;
+    text-align: center;
   }
 
+  .main .text-container h1 {
+    font-size: 28px;
+  }
+
+  .main .text-container p {
+    font-size: 16px;
+  }
+
+  .main .button-container {
+    justify-content: center;
+  }
+
+  /* Main button adjustments */
   .main .main-button {
-    width: 100%;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    font-size: 90%;
   }
 
-  .about .content-container,
+
+  .main .video-container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .main .video-container iframe {
+    width: 100%;
+  }
+
+  /* About section adjustments */
+  .about .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .about-image-container {
+    margin-bottom: 30px;
+  }
+
+  .about .about-image-container img {
+    max-width: 200px;
+  }
+
+  .about .about-text-container {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .about .about-text-container h2 {
+    font-size: 28px;
+  }
+
+  .about .about-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .about-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about .about-description h3 {
+    font-size: 20px;
+  }
+
+  /* Feature section adjustments */
   .feature .content-container {
     flex-direction: column;
     text-align: center;
   }
 
-  .about .about-text-container,
   .feature .feature-text-container {
-    max-width: 100%;
     padding-left: 0;
+    text-align: center;
   }
 
+  .feature .feature-image-container {
+    margin-top: 30px;
+  }
+
+  .feature .feature-image-container img {
+    max-width: 200px;
+  }
+
+  .feature .feature-item {
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature .feature-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature .feature-description h3 {
+    font-size: 18px;
+  }
+
+  /* ScreenShots section adjustments */
   .screenShots .screenShot-item {
     width: 100%;
+    /* One item per row */
+  }
+
+  .screenShots .content-container {
+    width: 90%;
+    /* Optional, you can adjust the width here */
+  }
+
+  .screenShots .screenShot-card:hover {
+    transform: scale(1.1);
   }
 
   .get-game-button {
-    width: 100%;
-    padding: 30px;
-    font-size: 24px;
+    width: 50%;
+    font-size: 20px;
   }
 
+  /* Footer adjustments */
   .footer .content-container {
-    flex-direction: column;
     text-align: center;
   }
 
-  #footer-text,
-  #footer-email {
-    text-align: center;
+  .footer #footer-email {
+    font-size: 14px;
+  }
+
+  .footer #footer-text {
+    font-size: 14px;
   }
 }

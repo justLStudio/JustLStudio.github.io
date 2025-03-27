@@ -13,7 +13,8 @@ h1 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-h2,h3 {
+h2,
+h3 {
   text-decoration: none;
   font-weight: bold;
   font-family: 'Verdana', Geneva, sans-serif;
@@ -103,7 +104,7 @@ header .nav_main div {
   align-self: center;
   gap: 15px;
   justify-content: center;
-  left: 50%;             
+  left: 50%;
 }
 
 header .nav_main button {
@@ -114,7 +115,7 @@ header .nav_main button {
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; 
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 header .nav_main button:hover {
@@ -123,7 +124,7 @@ header .nav_main button:hover {
 }
 
 header .nav_main button:focus {
-  outline: none; 
+  outline: none;
 }
 
 header .nav_main button:active {
@@ -330,15 +331,15 @@ header .nav_main button:active {
 .games .game-image img {
   width: 100%;
   height: auto;
-  border: 5px solid  #ffffff;
+  border: 5px solid #ffffff;
   border-radius: 6px;
-  margin-bottom: -30px; 
+  margin-bottom: -30px;
   transition: filter 0.3s ease;
 }
 
 .games .game-card:hover .game-image img {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); 
-  border: 5px solid  #007bff88;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  border: 5px solid #007bff88;
 }
 
 .games .game-details {
@@ -390,7 +391,7 @@ header .nav_main button:active {
 
 .contact-us h2 {
   font-size: 40px;
-  margin-top:  -5px;
+  margin-top: -5px;
   margin-bottom: 10px;
   font-weight: bold;
   text-transform: uppercase;
@@ -412,14 +413,14 @@ header .nav_main button:active {
 .contact-us label {
   display: block;
   font-weight: bold;
-  margin-left:5%;
+  margin-left: 5%;
   margin-bottom: 5px;
   color: #fff;
 }
 
-.contact-us input, 
+.contact-us input,
 .contact-us textarea {
-  width: 90%; 
+  width: 90%;
   max-width: 600px;
   padding: 10px;
   border: 2px solid transparent;
@@ -470,7 +471,7 @@ header .nav_main button:active {
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 15px;  
+  padding: 15px;
   text-align: center;
 }
 
@@ -507,50 +508,238 @@ header .nav_main button:active {
 
 
 /****** media ******/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+
+  /* Header */
+  .header {
+    height: 60px;
+  }
+
+  .header .nav_main {
+    padding: 0 10px;
+  }
+
+  .header .nav_main .logo {
+    font-size: 20px;
+  }
+
+  .header .nav_main .logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .header .nav_main .nav {
+    gap: 10px;
+  }
+
+  .header .nav_main .nav a {
+    font-size: 14px;
+  }
+
+  header .nav_main div {
+    gap: 5px;
+  }
+
+  header .nav_main button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  /* Main */
+  .main {
+    height: auto;
+    padding: 20px 10px;
+    margin-top: 0;
+  }
+
   .main .content-container {
     flex-direction: column;
-    align-items: center;
+    scale: 100%;
+  }
+
+  .main .logo-container {
     text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .main .logo-container img {
+    height: 80px;
   }
 
   .main .text-container {
     max-width: 100%;
-    padding-right: 0;
+    padding: 0;
+    text-align: center;
   }
 
-  .games .game-item {
+  .main .text-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .main .text-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .main .description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .main .button-container {
+    justify-content: center;
+  }
+
+  .main .main-button {
+    padding: 12px 25px;
+    font-size: 90%;
+  }
+
+  .main .video-container {
     width: 100%;
+    padding: 5px;
+  }
+
+  .main .video-container iframe {
+    width: 100%;
+  }
+
+  /* About */
+  .about {
+    padding: 40px 10px;
   }
 
   .about .content-container {
     flex-direction: column;
   }
 
-  .about .about-text-container {
-    max-width: 100%;
-    padding-left: 0;
+  .about .about-image-container {
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .about .about-image-container img {
+    max-width: 100px;
+  }
+
+  .about .about-text-container {
     max-width: 100%;
+    padding: 0;
+    text-align: center;
   }
-}
 
-@media (max-width: 480px) {
-  h1 {
+  .about .about-text-container h2 {
     font-size: 28px;
+    margin-bottom: 20px;
   }
 
-  .main .text-container h1 {
-    font-size: 28px;
+  .about .about-item {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .main .text-container p {
+  .about .about-icon {
+    margin-bottom: 10px;
+  }
+
+  .about .about-icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
+  }
+
+  .about .about-description h3 {
+    font-size: 20px;
+  }
+
+  .about .about-description p {
+    font-size: 14px;
+  }
+
+  /* Games */
+  .games {
+    padding: 20px 10px;
+  }
+
+  .games .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .games .content-container>* {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .games .game-details h3 {
+    font-size: 18px;
+  }
+
+  .games .game-details p {
+    font-size: 14px;
+  }
+
+  .games .game-button {
+    padding: 8px 15px;
+    font-size: 90%;
+  }
+
+  /* Contact Us */
+  .contact-us {
+    padding: 30px 10px;
+  }
+
+  .contact-us .content-container {
+    padding: 20px;
+  }
+
+  .contact-us h2 {
+    font-size: 30px;
+  }
+
+  .contact-us p {
     font-size: 16px;
   }
 
-  .games .game-item {
-    width: 100%;
+  .contact-us input,
+  .contact-us textarea {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .contact-us label {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 10px;
+  }
+
+  .footer .content-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  #footer-text {
+    text-align: center;
+  }
+
+  #footer-email {
+    text-align: center;
   }
 }
